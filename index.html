@@ -12,7 +12,7 @@
   </head>
 </div>
 
-<body>
+<body id="home" data-spy="scroll" data-target=".navbar">
 
     <!-- nav -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-warning">
@@ -51,7 +51,7 @@
         <div class="container text-center">
             <h1 class="display-2">Fluid jumbotron</h1>
             <p class="lead mb-5">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Register</a>
+<a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal" data-target="#registration">Register</a>
             <a class="btn btn btn-outline-primary btn-lg" href="#speakers" role="button">Speakers</a>
         </div>
     </div>
@@ -81,8 +81,88 @@
     <hr>
     <!-- Speakers -->
     <h1 id="speakers" class="display-4 text-center my-4 text-muted">Speakers</h1>
-        
-        <div class="card-deck">
+
+    <div class="card-deck">
+        <div class="row">
+    <div class="card mb-3 col-md-4">
+        <img class="card-img-top" src="holder.js/100x180/" alt="">
+        <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <p class="card-text">Text</p>
+        </div>
+    </div>
+    <div class="card mb-3 col-md-4">
+        <img class="card-img-top" src="holder.js/100x180/" alt="">
+        <div class="card-body">
+            <h4 class="card-title">Title</h4>
+<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+    content. This content is a little bit longer</p>
+        </div>
+    </div>
+<div class="card mb-3 col-md-4">
+    <img class="card-img-top" src="holder.js/100x180/" alt="">
+    <div class="card-body">
+        <h4 class="card-title">Title</h4>
+        <p class="card-text">Text</p>
+    </div>
+</div>
+<div class="card mb-3">
+    <img class="card-img-top" src="holder.js/100x180/" alt="">
+    <div class="card-body">
+        <h4 class="card-title">Title</h4>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer</p>
+    </div>
+</div>
+<div class="card mb-3">
+    <img class="card-img-top" src="holder.js/100x180/" alt="">
+    <div class="card-body">
+        <h4 class="card-title">Title</h4>
+        <p class="card-text">Text</p>
+    </div>
+</div>
+<div class="card mb-3">
+    <img class="card-img-top" src="holder.js/100x180/" alt="">
+    <div class="card-body">
+        <h4 class="card-title">Title</h4>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer</p>
+    </div>
+</div></div>
+</div>
+        <div class="row card-deck">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/Abstract Shapes1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-4">
+            <div class="card">
+                            <img class="card-img-top" src="img/Abstract Shapes2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        </div>
+            <div class="col-md-4">          
+            <div class="card">
+                            <img class="card-img-top" src="img/Abstract Shapes3.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                    content. This card has even longer content than the first to show that equal height action.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+            </div>
+            </div>
+            <div class="col-md-4">  
             <div class="card">
                 <img class="card-img-top" src="img/Abstract Shapes1.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -92,6 +172,8 @@
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
             </div>
+            </div>
+            <div class="col-md-4">
             <div class="card">
                 <img class="card-img-top" src="img/Abstract Shapes2.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -100,6 +182,8 @@
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
             </div>
+            </div>
+            <div class="col-md-4">
             <div class="card">
                 <img class="card-img-top" src="img/Abstract Shapes3.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -109,12 +193,12 @@
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
             </div>
+            </div>
             
         </div>
-        
 
     <!-- Schedule -->
-    <h1 class="display-4 text-center my-4 text-muted">Schedule</h1>
+    <h1 id="schedule" class="display-4 text-center my-4 text-muted">Schedule</h1>
     
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
@@ -148,12 +232,37 @@
             </h4> Kis
         </li>
     </ul>
-    
+
     <!-- Callout button -->
-    <button type="button" class="btn btn-primary btn-lg my-5 d-flex mx-auto" style="font-size: 32px">Register Now!</button>
+<button type="button" class="btn btn-primary btn-lg my-5 d-flex mx-auto" style="font-size: 32px" data-toggle="modal"
+    data-target="#registration">Register Now!</button>
       
 </div>
     <img class="d-flex mx-auto" src="img/image.png" alt="qrcode" sizes="346">
+</div>
+
+<!-- modal -->
+<!-- modal -->
+<!-- modal -->
+
+<div id="registration"  class="modal" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Registration on Web Fun</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Form here.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
 </div>
 
 
